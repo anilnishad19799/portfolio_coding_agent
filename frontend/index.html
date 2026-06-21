@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nishad Anil — Senior AI/ML Engineer specializing in Generative AI, Agentic AI, RAG Architectures, and Computer Vision. 4.5+ years building production-scale AI systems.">
+  <meta name="author" content="Nishad Anil">
+  <meta name="keywords" content="AI Engineer, ML Engineer, Nishad Anil, Portfolio, Generative AI, RAG, LangGraph, Computer Vision, Python, FastAPI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nishad Anil — Senior AI/ML Engineer">
+  <meta property="og:description" content="Portfolio showcasing AI/ML, RAG, Agentic AI, and Computer Vision projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/anilnishad19799">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nishad Anil — Senior AI/ML Engineer">
+  <meta name="twitter:description" content="Portfolio showcasing AI/ML, RAG, Agentic AI, and Computer Vision projects.">
+
+  <title>Nishad Anil — Senior AI/ML Engineer | Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="gradient-text">NA</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/#about" class="nav-link">About</a></li>
+        <li><a href="/#skills" class="nav-link">Skills</a></li>
+        <li><a href="/#projects" class="nav-link">Projects</a></li>
+        <li><a href="/#experience" class="nav-link">Experience</a></li>
+        <li><a href="/#education" class="nav-link">Education</a></li>
+        <li><a href="/#contact" class="nav-link">Contact</a></li>
+        <li><a href="/blog" class="nav-link" id="blogNavLink">Blog</a></li>
+        <li><a href="/admin" class="nav-link" id="adminNavLink">Admin</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <!-- Icon injected by JS -->
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <div id="portfolio-view">
+  <section class="hero section" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-greeting animate-on-scroll">Hello, I'm</p>
+        <h1 class="hero-name animate-on-scroll animate-delay-1">
+          Nishad <span class="gradient-text">Anil</span>
+        </h1>
+        <p class="hero-title animate-on-scroll animate-delay-2">
+          Senior AI/ML Engineer — Building Intelligent Systems at Scale
+        </p>
+        <p class="hero-description animate-on-scroll animate-delay-3">
+          4.5+ years designing production-grade <strong>Generative AI</strong>, 
+          <strong>Agentic AI</strong>, <strong>RAG Architectures</strong>, and 
+          <strong>Computer Vision</strong> solutions across Fortune 500 enterprises.
+        </p>
+
+        <div class="hero-cta animate-on-scroll animate-delay-4">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            View Projects
+          </a>
+          <a href="https://github.com/anilnishad19799" target="_blank" rel="noopener" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub Profile
+          </a>
+        </div>
+
+        <div class="hero-stats animate-on-scroll animate-delay-5">
+          <div class="hero-stat">
+            <span class="hero-stat-value counter" data-target="40">0</span>
+            <span class="hero-stat-label">Repositories</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value counter" data-target="4">0</span>
+            <span class="hero-stat-label">Years Experience</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value counter" data-target="30">0</span>
+            <span class="hero-stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT SECTION
+       ============================================ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Who I <span class="gradient-text">Am</span></h2>
+        <p class="section-subtitle">Turning complex AI research into production systems that drive business impact.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper animate-on-scroll">
+          <img src="assets/images/profile.jpg" alt="Nishad Anil — Senior AI/ML Engineer" class="about-image"
+               onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22><rect fill=%22%231e293b%22 width=%22400%22 height=%22400%22/><text x=%22200%22 y=%22220%22 text-anchor=%22middle%22 font-size=%2280%22 fill=%22%2306b6d4%22 font-family=%22sans-serif%22 font-weight=%22bold%22>NA</text></svg>'">
+        </div>
+
+        <div class="about-content">
+          <p class="about-text animate-on-scroll">
+            I'm a <strong>Senior AI/ML Engineer</strong> with over <strong>4.5 years</strong> of experience 
+            designing and deploying production-scale <strong>Generative AI, Agentic AI, Computer Vision, and NLP</strong> 
+            solutions across Fortune 500 industrial, renewable energy, banking, and healthcare domains.
+          </p>
+          <p class="about-text animate-on-scroll animate-delay-1">
+            I specialize in <strong>Multi-Agent Systems, Advanced RAG Architectures</strong>, and cloud-native AI platforms — 
+            from research and model development to <strong>Kubernetes-based production deployment on AWS</strong>. 
+            My passion is building intelligent systems that automate decision-making and drive real business impact.
+          </p>
+          <p class="about-text animate-on-scroll animate-delay-2">
+            With hands-on expertise in <strong>LangGraph, LangChain, OpenAI, MCP, LLM Finetuning, YOLO, 
+            FastAPI, Docker, Kubernetes</strong>, and more — I've improved model performance from 
+            <strong>80% to 95% F1-score</strong> and reduced inference latency by <strong>40%</strong> through 
+            optimization and scalable system design.
+          </p>
+
+          <div class="about-highlights animate-on-scroll animate-delay-3">
+            <div class="highlight-card">
+              <span class="highlight-value gradient-text counter" data-target="40">0</span>
+              <span class="highlight-label">Open Source Repos</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-value gradient-text">95%</span>
+              <span class="highlight-label">Best F1-Score</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-value gradient-text">40%</span>
+              <span class="highlight-label">Latency Reduction</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-value gradient-text counter" data-target="4">0</span>
+              <span class="highlight-label">Domains Served</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SKILLS SECTION
+       ============================================ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Expertise</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">A comprehensive toolkit spanning AI/ML, cloud infrastructure, and full-stack development.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category animate-on-scroll">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">💻</span>
+            <h3 class="skill-category-title">Programming</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category animate-on-scroll animate-delay-1">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">🤖</span>
+            <h3 class="skill-category-title">Generative AI &amp; Agentic AI</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">OpenAI</span>
+            <span class="skill-tag">Claude</span>
+            <span class="skill-tag">Gemini</span>
+            <span class="skill-tag">Llama</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">LangGraph</span>
+            <span class="skill-tag">MCP</span>
+            <span class="skill-tag">A2A</span>
+            <span class="skill-tag">LLM Finetuning</span>
+            <span class="skill-tag">PEFT / LORA</span>
+            <span class="skill-tag">Multi-Agent Systems</span>
+            <span class="skill-tag">AI Agents</span>
+            <span class="skill-tag">Tool Calling</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Guardrails</span>
+          </div>
+        </div>
+
+        <div class="skill-category animate-on-scroll animate-delay-2">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">🔗</span>
+            <h3 class="skill-category-title">RAG &amp; Retrieval</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Advanced RAG</span>
+            <span class="skill-tag">GraphRAG</span>
+            <span class="skill-tag">LightRAG</span>
+            <span class="skill-tag">Hybrid Search</span>
+            <span class="skill-tag">Semantic Search</span>
+            <span class="skill-tag">Reranking</span>
+            <span class="skill-tag">Semantic Chunking</span>
+            <span class="skill-tag">Retrieval Optimization</span>
+          </div>
+        </div>
+
+        <div class="skill-category animate-on-scroll animate-delay-3">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">🧠</span>
+            <h3 class="skill-category-title">ML &amp; Computer Vision</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Scikit-Learn</span>
+            <span class="skill-tag">Hugging Face</span>
+            <span class="skill-tag">YOLO</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">OCR</span>
+            <span class="skill-tag">AWS Textract</span>
+            <span class="skill-tag">Object Detection</span>
+            <span class="skill-tag">Image Segmentation</span>
+            <span class="skill-tag">MediaPipe</span>
+          </div>
+        </div>
+
+        <div class="skill-category animate-on-scroll animate-delay-4">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">🗄️</span>
+            <h3 class="skill-category-title">Databases &amp; Vector Stores</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">Neo4j</span>
+            <span class="skill-tag">PGVector</span>
+            <span class="skill-tag">Qdrant</span>
+            <span class="skill-tag">Pinecone</span>
+            <span class="skill-tag">FAISS</span>
+            <span class="skill-tag">Milvus</span>
+            <span class="skill-tag">ChromaDB</span>
+          </div>
+        </div>
+
+        <div class="skill-category animate-on-scroll animate-delay-5">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">☁️</span>
+            <h3 class="skill-category-title">Backend &amp; Cloud</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">WebSockets</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">ECS</span>
+            <span class="skill-tag">EKS</span>
+          </div>
+        </div>
+
+        <div class="skill-category animate-on-scroll animate-delay-6">
+          <div class="skill-category-header">
+            <span class="skill-category-icon">📊</span>
+            <h3 class="skill-category-title">MLOps &amp; LLMOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">LangFuse</span>
+            <span class="skill-tag">MLflow</span>
+            <span class="skill-tag">Model Monitoring</span>
+            <span class="skill-tag">Experiment Tracking</span>
+            <span class="skill-tag">Observability</span>
+            <span class="skill-tag">Model Deployment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PROJECTS SECTION
+       ============================================ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Explore my open-source work across AI/ML, RAG, Agentic AI, and more.</p>
+      </div>
+
+      <div class="project-controls">
+        <div class="project-filters" id="projectFilters">
+          <!-- Filter buttons injected by JS -->
+        </div>
+
+        <div class="project-search">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="projectSearch" placeholder="Search projects..." aria-label="Search projects">
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Project cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       EXPERIENCE SECTION
+       ============================================ -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Career</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">4.5+ years of building AI systems that solve real-world problems.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Job 1: Mphasis -->
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jan 2026 – Present</span>
+            <h3 class="timeline-company">Mphasis</h3>
+            <p class="timeline-role">Senior Software Developer</p>
+            <ul class="timeline-details">
+              <li>Developing and deploying a scalable report automation solution on AWS ECS for validating and comparing weekly operational reports across multiple business teams.</li>
+              <li>Designed Python and Pandas-based data processing workflows integrated with ServiceNow ticket validation, enabling automated discrepancy detection and compliance reporting.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 2: Optimized Solutions -->
+        <div class="timeline-item animate-on-scroll animate-delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Apr 2025 – Jan 2026</span>
+            <h3 class="timeline-company">Optimized Solutions Limited</h3>
+            <p class="timeline-role">Senior AI/ML Engineer</p>
+            <ul class="timeline-details">
+              <li>Architected a production-grade AI platform for a Fortune 500 industrial client, integrating Computer Vision, OCR, FastAPI, and AWS cloud infrastructure.</li>
+              <li>Designed an Agentic AI ecosystem using LangGraph, MCP connectors, Advanced RAG pipelines, and SQL Agents to automate knowledge retrieval.</li>
+              <li>Improved object detection performance from 80% to 95% F1-score through advanced augmentation and iterative model optimization.</li>
+              <li>Containerized and scaled AI workloads on Amazon EKS, supporting thousands of automated document-processing operations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 3: JSR Renewable -->
+        <div class="timeline-item animate-on-scroll animate-delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jul 2023 – Apr 2025</span>
+            <h3 class="timeline-company">JSR Renewable Consultants</h3>
+            <p class="timeline-role">Senior Machine Learning Engineer</p>
+            <ul class="timeline-details">
+              <li>Engineered an RAG-based knowledge assistant for automated PDF error diagnosis, reducing manual troubleshooting effort.</li>
+              <li>Architected a Multimodal RAG pipeline leveraging semantic chunking, hybrid search, Cross-Encoder reranking, and image indexing.</li>
+              <li>Optimized custom YOLO models, improving rare-class defect detection accuracy from 76% to 94% F1-score.</li>
+              <li>Developed OpenCV-based inspection pipelines for automated measurement and quality assurance reporting.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 4: Kshatra Infotech -->
+        <div class="timeline-item animate-on-scroll animate-delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Apr 2022 – May 2023</span>
+            <h3 class="timeline-company">Kshatra Infotech Pvt. Ltd.</h3>
+            <p class="timeline-role">Machine Learning Developer</p>
+            <ul class="timeline-details">
+              <li>Developed an end-to-end AI-powered document verification platform for banking, reducing manual verification effort by over 50%.</li>
+              <li>Engineered automated document-processing pipelines integrating AWS Textract and PostgreSQL.</li>
+              <li>Built 3D deep learning models for DICOM-based medical image analysis, increasing cancer detection accuracy from 60% to 75%.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       EDUCATION SECTION
+       ============================================ -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Background</span>
+        <h2 class="section-title">Education &amp; <span class="gradient-text">Certifications</span></h2>
+      </div>
+
+      <div class="education-grid">
+        <div class="education-card animate-on-scroll">
+          <span class="education-icon">🎓</span>
+          <h3 class="education-degree">B.Tech — Computer Engineering</h3>
+          <p class="education-school">Uka Tarsadia University</p>
+          <p class="education-score gradient-text">CGPA: 9.48</p>
+          <p class="education-year">2017 – 2021</p>
+        </div>
+
+        <div class="education-card animate-on-scroll animate-delay-1">
+          <span class="education-icon">🏆</span>
+          <h3 class="education-degree">Certifications</h3>
+          <div class="certifications-list">
+            <div class="cert-item">
+              <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <div>
+                <p class="cert-title">Building AI Agent &amp; Agentic AI System</p>
+                <p class="cert-provider">Microsoft Autogen — Udemy</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <div>
+                <p class="cert-title">Generative AI with LLMs</p>
+                <p class="cert-provider">Coursera</p>
+              </div>
+            </div>
+            <div class="cert-item">
+              <svg class="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <div>
+                <p class="cert-title">AWS Networking Masterclass</p>
+                <p class="cert-provider">Udemy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-subtitle">Have a project in mind or want to discuss AI? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info animate-on-scroll">
+          <p class="contact-text">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing. 
+            Whether it's about AI, machine learning, or just a friendly chat — feel free to reach out!
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:anilnishad19799@gmail.com" class="contact-link">
+              <svg class="contact-link-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              anilnishad19799@gmail.com
+            </a>
+            <a href="tel:+916354020628" class="contact-link">
+              <svg class="contact-link-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              +91 63540 20628
+            </a>
+            <a href="https://linkedin.com/in/anilnishad19799" target="_blank" rel="noopener" class="contact-link">
+              <svg class="contact-link-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/anilnishad19799" target="_blank" rel="noopener" class="contact-link">
+              <svg class="contact-link-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form animate-on-scroll animate-delay-1" id="contactForm" action="mailto:anilnishad19799@gmail.com" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?">
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Your message..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- ============================================
+       BLOG LIST VIEW
+       ============================================ -->
+  <main id="blog-list-view" class="section hidden">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Articles</span>
+        <h2 class="section-title">My <span class="gradient-text">Blog</span></h2>
+        <p class="section-subtitle">Thoughts, guides, and tutorials on AI/ML, Agents, and RAG.</p>
+      </div>
+      <div class="blog-posts-container" id="blogPostsList">
+        <div class="loading-spinner">Loading posts...</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============================================
+       BLOG DETAIL VIEW
+       ============================================ -->
+  <main id="blog-detail-view" class="section hidden">
+    <div class="container">
+      <div class="blog-back-btn" style="margin-bottom: 2rem;">
+        <a href="/blog" class="btn btn-secondary back-to-blog-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Back to Blog
+        </a>
+      </div>
+      <div class="blog-detail-grid">
+        <article class="blog-post-content">
+          <header class="blog-post-header">
+            <h1 id="blogPostTitle" class="gradient-text" style="font-size: 2.5rem; margin-bottom: 1rem;">Post Title</h1>
+            <div class="blog-post-meta" style="margin-bottom: 2rem; opacity: 0.7;">
+              <span id="blogPostDate">Date</span> &bull; 
+              <span id="blogPostTags">Tags</span>
+            </div>
+          </header>
+          <div class="blog-post-body markdown-body" id="blogPostBody">
+            <!-- Content -->
+          </div>
+        </article>
+        <aside class="blog-sidebar">
+          <div class="toc-container">
+            <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Table of Contents</h3>
+            <nav id="blogPostTOC" class="toc-nav">
+              <!-- TOC -->
+            </nav>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============================================
+       ADMIN PORTAL VIEW
+       ============================================ -->
+  <main id="admin-view" class="section hidden">
+    <div class="container">
+      <!-- Login form -->
+      <div id="adminLoginContainer" class="admin-login-card" style="max-width: 450px; margin: 4rem auto; padding: 2rem; border-radius: 12px; background: var(--bg-card); border: 1px solid var(--border-color);">
+        <div class="section-header" style="margin-bottom: 1.5rem;">
+          <span class="section-label">Restricted Access</span>
+          <h2 class="section-title" style="font-size: 1.75rem;">Admin <span class="gradient-text">Portal</span></h2>
+        </div>
+        <form id="adminLoginForm">
+          <div class="form-group">
+            <label for="adminUsername" class="form-label">Username</label>
+            <input type="text" id="adminUsername" class="form-input" required autocomplete="username">
+          </div>
+          <div class="form-group">
+            <label for="adminPassword" class="form-label">Password</label>
+            <input type="password" id="adminPassword" class="form-input" required autocomplete="current-password">
+          </div>
+          <div id="loginErrorMessage" class="error-text hidden" style="color: #ef4444; font-size: 0.875rem; margin-top: -0.5rem; margin-bottom: 1rem;"></div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Log In</button>
+        </form>
+      </div>
+
+      <!-- Admin Control Panel -->
+      <div id="adminDashboardContainer" class="admin-dashboard-container hidden">
+        <div class="admin-dashboard-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+          <h2 class="gradient-text" style="font-size: 2rem;">Workspace Control Panel</h2>
+          <button id="adminLogoutBtn" class="btn btn-secondary">Log Out</button>
+        </div>
+        
+        <div class="admin-tabs" style="display: flex; gap: 1rem; border-bottom: 1px solid var(--border-color); margin-bottom: 2rem; overflow-x: auto; padding-bottom: 0.5rem;">
+          <button class="admin-tab-btn active" data-tab="manage-projects">Manage Projects</button>
+          <button class="admin-tab-btn" data-tab="manage-posts">Manage Blog</button>
+          <button class="admin-tab-btn" data-tab="visitor-analytics">Visitor Analytics</button>
+          <button class="admin-tab-btn" data-tab="contact-inbox">Contact Inbox</button>
+        </div>
+
+        <!-- Tab: Projects -->
+        <div class="admin-tab-content active" id="tab-manage-projects">
+          <div class="admin-section-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+            <h3>Projects CMS</h3>
+            <button id="addNewProjectBtn" class="btn btn-primary btn-sm">Add Custom Project</button>
+          </div>
+          <div class="admin-table-wrapper" style="overflow-x: auto; width: 100%;">
+            <table class="admin-table" id="adminProjectsTable" style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+              <thead>
+                <tr style="border-bottom: 1px solid var(--border-color); text-align: left;">
+                  <th style="padding: 1rem;">Order</th>
+                  <th style="padding: 1rem;">Name</th>
+                  <th style="padding: 1rem;">Category</th>
+                  <th style="padding: 1rem;">Language</th>
+                  <th style="padding: 1rem;">Stars</th>
+                  <th style="padding: 1rem;">Custom</th>
+                  <th style="padding: 1rem;">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab: Blog -->
+        <div class="admin-tab-content hidden" id="tab-manage-posts">
+          <div class="admin-section-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+            <h3>Blog CMS</h3>
+            <button id="addNewPostBtn" class="btn btn-primary btn-sm">Add New Post</button>
+          </div>
+          <div class="admin-table-wrapper" style="overflow-x: auto; width: 100%;">
+            <table class="admin-table" id="adminPostsTable" style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+              <thead>
+                <tr style="border-bottom: 1px solid var(--border-color); text-align: left;">
+                  <th style="padding: 1rem;">Title</th>
+                  <th style="padding: 1rem;">Slug</th>
+                  <th style="padding: 1rem;">Status</th>
+                  <th style="padding: 1rem;">Published At</th>
+                  <th style="padding: 1rem;">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab: Visitor Analytics -->
+        <div class="admin-tab-content hidden" id="tab-visitor-analytics">
+          <h3 style="margin-bottom: 1.5rem;">Visitor Analytics Dashboard</h3>
+          <div class="analytics-metrics" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+            <div class="metric-card animate-on-scroll" style="padding: 1.5rem; border-radius: 8px; background: var(--bg-card); border: 1px solid var(--border-color); text-align: center;">
+              <span class="metric-label" style="display: block; font-size: 0.875rem; opacity: 0.7; margin-bottom: 0.5rem;">Total Page Views</span>
+              <span class="metric-value" id="analyticTotalViews" style="font-size: 2rem; font-weight: 700; color: var(--color-primary);">0</span>
+            </div>
+            <div class="metric-card animate-on-scroll" style="padding: 1.5rem; border-radius: 8px; background: var(--bg-card); border: 1px solid var(--border-color); text-align: center;">
+              <span class="metric-label" style="display: block; font-size: 0.875rem; opacity: 0.7; margin-bottom: 0.5rem;">Unique Visitors</span>
+              <span class="metric-value" id="analyticUniqueVisitors" style="font-size: 2rem; font-weight: 700; color: var(--color-secondary);">0</span>
+            </div>
+          </div>
+          <div class="analytics-charts-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+            <div class="analytics-chart-card" style="padding: 1.5rem; border-radius: 8px; background: var(--bg-card); border: 1px solid var(--border-color);">
+              <h4 style="margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Top Pages</h4>
+              <div class="chart-container" id="chartPaths"></div>
+            </div>
+            <div class="analytics-chart-card" style="padding: 1.5rem; border-radius: 8px; background: var(--bg-card); border: 1px solid var(--border-color);">
+              <h4 style="margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Referrers</h4>
+              <div class="chart-container" id="chartReferrers"></div>
+            </div>
+            <div class="analytics-chart-card" style="padding: 1.5rem; border-radius: 8px; background: var(--bg-card); border: 1px solid var(--border-color);">
+              <h4 style="margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Devices</h4>
+              <div class="chart-container" id="chartDevices"></div>
+            </div>
+            <div class="analytics-chart-card" style="padding: 1.5rem; border-radius: 8px; background: var(--bg-card); border: 1px solid var(--border-color);">
+              <h4 style="margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Browsers</h4>
+              <div class="chart-container" id="chartBrowsers"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: Contact Inbox -->
+        <div class="admin-tab-content hidden" id="tab-contact-inbox">
+          <h3 style="margin-bottom: 1.5rem;">Inbox Messages</h3>
+          <div class="contact-messages-list" id="adminInboxList" style="display: flex; flex-direction: column; gap: 1rem;">
+            <div class="loading-spinner">Loading messages...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============================================
+       MODALS
+       ============================================ -->
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal-overlay hidden">
+    <div class="modal-content animate-slide-up" style="max-width: 600px; width: 90%; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; position: relative;">
+      <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <h3 id="projectModalTitle" class="gradient-text" style="font-size: 1.5rem;">Add Project</h3>
+        <button class="modal-close" style="background: none; border: none; font-size: 1.75rem; cursor: pointer; color: var(--text-color);" onclick="closeModal('projectModal')">&times;</button>
+      </div>
+      <form id="projectForm" class="modal-form">
+        <input type="hidden" id="projectModalId">
+        <div class="form-group">
+          <label for="projectFormId" class="form-label">Project ID (unique, e.g. custom-id)</label>
+          <input type="text" id="projectFormId" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="projectFormName" class="form-label">Project Name</label>
+          <input type="text" id="projectFormName" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="projectFormDescription" class="form-label">Description</label>
+          <textarea id="projectFormDescription" class="form-textarea" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="projectFormUrl" class="form-label">HTML URL</label>
+          <input type="url" id="projectFormUrl" class="form-input" placeholder="https://github.com/...">
+        </div>
+        <div class="form-group">
+          <label for="projectFormLanguage" class="form-label">Language</label>
+          <input type="text" id="projectFormLanguage" class="form-input" placeholder="Python, JavaScript">
+        </div>
+        <div class="form-group">
+          <label for="projectFormCategory" class="form-label">Category</label>
+          <select id="projectFormCategory" class="form-select" style="width: 100%; padding: 0.75rem; border-radius: 6px; background: var(--bg-body); border: 1px solid var(--border-color); color: var(--text-color);">
+            <option value="Generative AI &amp; Agentic AI">Generative AI &amp; Agentic AI</option>
+            <option value="RAG &amp; Retrieval">RAG &amp; Retrieval</option>
+            <option value="ML &amp; Computer Vision">ML &amp; Computer Vision</option>
+            <option value="Backend &amp; Cloud">Backend &amp; Cloud</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="projectFormStars" class="form-label">Stars Count</label>
+          <input type="number" id="projectFormStars" class="form-input" value="0">
+        </div>
+        <div class="form-group">
+          <label for="projectFormTopics" class="form-label">Topics (comma-separated)</label>
+          <input type="text" id="projectFormTopics" class="form-input" placeholder="python, agentic-ai, llm">
+        </div>
+        <div class="form-group">
+          <label for="projectFormOrder" class="form-label">Display Order</label>
+          <input type="number" id="projectFormOrder" class="form-input" value="0">
+        </div>
+        <div class="modal-footer" style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 1.5rem;">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('projectModal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Project</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Blog Post Modal -->
+  <div id="postModal" class="modal-overlay hidden">
+    <div class="modal-content modal-content-lg animate-slide-up" style="max-width: 900px; width: 95%; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; position: relative; max-height: 90vh; overflow-y: auto;">
+      <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <h3 id="postModalTitle" class="gradient-text" style="font-size: 1.5rem;">Add Post</h3>
+        <button class="modal-close" style="background: none; border: none; font-size: 1.75rem; cursor: pointer; color: var(--text-color);" onclick="closeModal('postModal')">&times;</button>
+      </div>
+      <form id="postForm" class="modal-form">
+        <input type="hidden" id="postModalId">
+        <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="postFormTitle" class="form-label">Title</label>
+            <input type="text" id="postFormTitle" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label for="postFormSlug" class="form-label">Slug</label>
+            <input type="text" id="postFormSlug" class="form-input" required placeholder="building-agentic-ai">
+          </div>
+        </div>
+        <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="postFormExcerpt" class="form-label">Excerpt</label>
+            <input type="text" id="postFormExcerpt" class="form-input" placeholder="A short preview description">
+          </div>
+          <div class="form-group">
+            <label for="postFormTags" class="form-label">Tags (comma-separated)</label>
+            <input type="text" id="postFormTags" class="form-input" placeholder="ai, agentic, python">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="postFormCover" class="form-label">Cover Image URL</label>
+          <input type="text" id="postFormCover" class="form-input" placeholder="https://example.com/cover.jpg">
+        </div>
+        <div class="form-group">
+          <label for="postFormStatus" class="form-label">Status</label>
+          <select id="postFormStatus" class="form-select" style="width: 100%; padding: 0.75rem; border-radius: 6px; background: var(--bg-body); border: 1px solid var(--border-color); color: var(--text-color);">
+            <option value="draft">Draft</option>
+            <option value="published">Published</option>
+          </select>
+        </div>
+        <div class="editor-workspace" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
+          <div class="editor-pane" style="display: flex; flex-direction: column;">
+            <label for="postFormContent" class="form-label">Content (Markdown)</label>
+            <textarea id="postFormContent" class="form-textarea" rows="12" style="font-family: monospace; font-size: 0.9rem;" required placeholder="Write your post content here..."></textarea>
+          </div>
+          <div class="preview-pane" style="display: flex; flex-direction: column; overflow-y: auto; max-height: 350px; border: 1px solid var(--border-color); padding: 1rem; border-radius: 6px; background: var(--bg-body);">
+            <span class="form-label" style="font-weight: 600; margin-bottom: 0.5rem; display: block; border-bottom: 1px solid var(--border-color); padding-bottom: 0.25rem;">Live Preview</span>
+            <div id="postFormPreview" class="markdown-body editor-preview"></div>
+          </div>
+        </div>
+        <div class="modal-footer" style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 1.5rem;">
+          <button type="button" class="btn btn-secondary" onclick="closeModal('postModal')">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Post</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://github.com/anilnishad19799" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/anilnishad19799" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:anilnishad19799@gmail.com" class="social-link" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+
+        <p class="footer-text">
+          Designed &amp; Built with <span class="footer-heart">❤️</span> by <strong>Nishad Anil</strong>
+        </p>
+        <p class="footer-text" style="margin-top: 0.5rem; font-size: 0.75rem;">
+          © 2024–2026 Nishad Anil. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/github.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/blog.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
